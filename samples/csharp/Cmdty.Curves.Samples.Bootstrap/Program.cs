@@ -85,6 +85,7 @@ namespace Cmdty.Curves.Samples.Bootstrap
 
             // Shaping applied as a spread between Feb and Mar
             const double spread = 0.21;
+
             var (pieceWiseCurveWithSpread, _) = new Bootstrapper<Month>()
                 .AddContract(jan20, 19.05)
                 .AddContract(Quarter.CreateQuarter1(2020), 17.22)
